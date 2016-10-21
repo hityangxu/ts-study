@@ -14,3 +14,10 @@ let another: StringArray = {
 };
 
 // index will be change to string first
+
+interface Dictionary {
+    [index: string]: number;
+
+    length: number;
+    // name: string; error
+}
