@@ -16,8 +16,7 @@ let another: StringArray = {
 // index will be change to string first
 
 interface Dictionary {
-    [index: string]: number;
+    [index: string]: {length: number, name: string};
 
-    length: number;
-    // name: string; error
+    dict: {length: number, name: string};
 }
