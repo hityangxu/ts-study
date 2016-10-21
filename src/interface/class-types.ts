@@ -5,6 +5,8 @@
 interface ClockInterface {
     currentTime: Date;
     setTime(date: Date);
+
+    new (m: number, n: number);
 }
 
 class Clock implements ClockInterface {
@@ -15,7 +17,6 @@ class Clock implements ClockInterface {
         this.currentTime = date;
     }
 
-    constructor(currentTime: Date) {
-        this.currentTime = currentTime;
-    }
+
+    // constructor(m: number, n:number){} constructor is in static side
 }
