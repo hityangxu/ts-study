@@ -8,15 +8,15 @@ interface ClockInterface {
 
     new (m: number, n: number);
 }
-
-class Clock implements ClockInterface {
-    currentTime: Date;
-
-    setTime(date: Date) {
-
-        this.currentTime = date;
-    }
-
-
-    // constructor(m: number, n:number){} constructor is in static side
-}
+//
+// class Clock implements ClockInterface {
+//     currentTime: Date;
+//
+//     setTime(date: Date) {
+//
+//         this.currentTime = date;
+//     }
+//
+//
+//     // constructor(m: number, n:number){} constructor is in static side
+// }
