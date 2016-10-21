@@ -8,6 +8,7 @@ interface Shape {
 
 interface PenStroke {
     penWidth: number;
+    color: string;
 }
 
 interface Square extends Shape, PenStroke {
