@@ -3,7 +3,7 @@
  */
 
 interface SquareConfig {
-    color?: string;
+    color?: string; // prevent using properties that are not parts of interface
     width?: number;
 }
 
@@ -21,6 +21,6 @@ function createSquare(config: SquareConfig): {color: string, area: number} {
     return newSquare;
 }
 
-let mySquare = createSquare({});
+let mySquare = createSquare({color: 'black'});
 
 console.log(mySquare);
