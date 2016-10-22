@@ -14,3 +14,15 @@ let user = {
 
 let func = user.getNameFunc();
 func();
+
+let doNotUseThis = function(this:void) {
+    // console.log(this.name);
+};
+
+doNotUseThis();
+
+let printName = function(this: void, name: string) {
+    console.log(name);
+};
+
+printName("Yang");
