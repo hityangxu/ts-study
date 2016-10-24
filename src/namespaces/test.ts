@@ -10,5 +10,5 @@ console.log(letterValidator.isAcceptable("123"));
 
 import validation = prs.Validation;
 
-let numberValidator = validation.NumberValidator();
+let numberValidator = new validation.NumberValidator();
 console.log(numberValidator.isAcceptable("321"));
